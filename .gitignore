@@ -1,0 +1,31 @@
+# Xilinx ISE generated folders
+**/_xmsgs/
+**/iseconfig/
+**/isim/
+**/xst/
+**/ipcore_dir/
+
+# Xilinx ISE generated files
+**/*.log
+**/*.xmsgs
+**/*.cmd_log
+**/*.xrpt
+**/*.syr
+**/*.ngc
+**/*.ngr
+**/*.stx
+**/*.lso
+**/*.prj
+**/*.exe
+**/*.wdb
+**/*.html
+**/*.xml
+**/*.tmp
+**/*.bak
+
+# Specific generated files
+**/fuseRelaunch.cmd
+**/isim.cmd
+**/xilinxsim.ini
+**/*.xst
+**/*.gise
