@@ -3,9 +3,9 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -i -bm adder_onebit_tb.bmm -p xc6slx4-tqg144-3
-nand_gate.ngc nand_gate.ngd
+not_gate.ngc not_gate.ngd
 
-Reading NGO file "/home/ise/vlsi_lab/nand_gate.ngc" ...
+Reading NGO file "/home/ise/vlsi_lab/not_gate.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -19,6 +19,11 @@ WARNING::53 - File 'adder_onebit_tb.bmm' is empty or has no BMM content.
 
 
 Checking expanded design ...
+ERROR:NgdBuild:604 - logical block 'NAND1' with type 'nand_gate' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'nand_gate' is not supported in target
+   'spartan6'.
 
 Partition Implementation Status
 -------------------------------
@@ -28,13 +33,14 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     0
+  Number of errors:     1
   Number of warnings:   0
 
-Total memory usage is 498296 kilobytes
+Total memory usage is 493504 kilobytes
 
-Writing NGD file "nand_gate.ngd" ...
 Total REAL time to NGDBUILD completion:  1 sec
 Total CPU time to NGDBUILD completion:   1 sec
 
-Writing NGDBUILD log file "nand_gate.bld"...
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "not_gate.bld"...
